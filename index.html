@@ -1,36 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Vortex Browser</title>
+
+    <meta name="description" content="Official website of Vortex Browser. Fast, safe and lightweight Windows browser.">
+    <meta name="keywords" content="Vortex Browser, Windows browser, lightweight browser, fast browser">
+    <meta name="author" content="Vortex Team">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
+            margin: 0;
             background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
             color: white;
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             text-align: center;
-            padding-top: 120px;
         }
-        h1 { font-size: 60px; }
+
+        header {
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 20px;
+            opacity: 0.8;
+        }
+
         .btn {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 16px 40px;
             background: #6c3cff;
-            padding: 15px 35px;
             color: white;
             text-decoration: none;
+            font-size: 20px;
             border-radius: 12px;
-            font-size: 22px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #4a28b8;
+            transform: scale(1.05);
+        }
+
+        .features {
+            margin-top: 100px;
+            padding: 40px;
+        }
+
+        .feature-box {
+            margin: 20px auto;
+            max-width: 500px;
+            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+        }
+
+        footer {
+            margin-top: 120px;
+            padding: 20px;
+            opacity: 0.6;
+            font-size: 14px;
+        }
+
+        @media(max-width:600px){
+            h1 {
+                font-size: 38px;
+            }
+            .btn {
+                font-size: 18px;
+                padding: 14px 28px;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<h1>🌀 Vortex Browser</h1>
-<p>Fast • Clean • Lightweight</p>
+<header>
+    <h1>🌀 Vortex Browser</h1>
+    <p>Fast • Clean • Lightweight</p>
 
-<br><br>
+    <a class="btn" href="https://github.com/sametkaratasfan771-eng/Vortex-Browser/releases/latest">
+        ⬇ Download for Windows (.exe)
+    </a>
+</header>
 
-<a class="btn" href="https://github.com/sametkaratasfan771-eng/Vortex-Browser/releases/latest">
-Download Latest Version
-</a>
+<section class="features">
+    <div class="feature-box">
+        ⚡ Lightning Fast Performance
+    </div>
+
+    <div class="feature-box">
+        🌙 Dark Mode Support
+    </div>
+
+    <div class="feature-box">
+        ⭐ Favorites & History System
+    </div>
+</section>
+
+<footer>
+    © 2026 Vortex Browser. All rights reserved.
+</footer>
 
 </body>
 </html>
